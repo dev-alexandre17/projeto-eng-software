@@ -1,0 +1,52 @@
+*
+
+{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+header 
+
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    height: 100px;
+}
+
+header ul li 
+
+{
+    display: inline;
+}
+
+header ul li a 
+
+{
+    color: rgb(0, 0, 0);
+    margin-left: -10px;
+    margin-top: 100px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 40px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    position: relative;
+    left: 45px;
+}
+
+.fotos-gerais img {
+    margin-bottom: -60px;
+    margin-top: 60px;
+    padding-left: 3px;
+    width: 334px;
+}

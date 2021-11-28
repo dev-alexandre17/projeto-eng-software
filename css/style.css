@@ -1,11 +1,16 @@
+/* importando fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,400&display=swap');
+
+
 *
 
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
+/* confugurando a segunda section corpo-inicial-pagina*/
 .corpo-inicial-pagina 
 
 {
@@ -18,6 +23,7 @@
     text-shadow: 0 0 3px #003300, 0 0 5px #000066;
 }
 
+/* criando menu na parte superior da tela*/
 header 
 
 {
@@ -28,9 +34,12 @@ header
     padding: 20px 100px;
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: black;
     align-items: center;
     height: 100px;
+}
+header h1{
+    color: wheat; 
 }
 
 header ul li 
@@ -42,43 +51,55 @@ header ul li
 header ul li a 
 
 {
-    color: rgb(0, 0, 0);
+    color: wheat;
     margin-left: -10px;
     margin-top: 100px;
     text-decoration: none;
     border: none;
     border-radius: 10px;
     padding-top: 5px;
-    padding-left: 40px;
-    padding-right: 15px;
+    padding-left: 5PX;
+    padding-right: 5px;
+    margin: 5px;
     padding-bottom: 5px;
     position: relative;
     left: 45px;
 }
 
+header ul li a:hover{
+    background: rgb(230, 193, 168);
+    color: black;
+} 
+
+/* segunda section onde ficará a primeira impressão do site*/
 .corpo-inicial-pagina h1
 
 {
+    
     padding-top: 60px;
     padding-left: 10px;
-    color: white;
-    font-size: 90px;
+    color: rgb(230, 193, 168);
+    font-size: 80px;
 }
 
 .features 
 {
-    margin-top: 200px;
-    background:rgb(255, 255, 255);
-}
+    padding-top: 50px;
+    background-color:rgb(248, 201, 201);
 
+}
+/*Título features*/
 .features h1 
 
 {
-    margin: 200px;
+    margin: 100px;
     font-size: 60px;
     text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+   /* color: rgb(131, 93, 93);*/
 }
-
+/*criando caixas com conteudo dentro da features*/
 .features .box-container{
     display: flex;
     align-items: center;
@@ -115,28 +136,31 @@ color:rgb(54, 31, 97);
 font-size: 1.5rem;
 padding:1rem;
 }
-
+/* outra section*/
 .sobre-site 
 
 {
-    background-color: white;
+    background-color:rgb(248, 201, 201);
     height:1050px;
 }
 
 .sobre-site h2 
 
 {
-    margin-top: 200px;
+    padding-top: 100px;
     text-align: center;
     font-size: 60px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
 }
 
 .sobre-site p
 
 {
     margin: 45px;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: -20px;
+    color: rgb(46, 31, 31);
 }
 
 .sobre-site img 
@@ -146,11 +170,14 @@ padding:1rem;
     margin-top: -300px;
     padding-left: 750px;
 }
+.review{
+    background-color: rgb(248, 201, 201);
+}
 
-.review h1
+.review h2
 
 {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     font-size: 60px;
     text-align: center;
 }
@@ -173,7 +200,13 @@ padding:1rem;
     flex: 1rem;
     border: .1rem solid black;
     border-radius: .5rem;
+    background-color: white;
+    color: rgb(54, 31, 97);
     
+}
+.review .box-container .box h3{
+    font-weight: 400;
+    color: rgb(19, 11, 36);
 }
 
 .review .box-container .box img 
@@ -194,7 +227,7 @@ padding:1rem;
   .footer h2
   {
     font-size: 170%;
-    color: white;
+    color: wheat;
     padding-left: 200px;
     padding-top: 55px;
   }

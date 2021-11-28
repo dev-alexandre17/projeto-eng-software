@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #000000;
+    color: wheat;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+main {
+    width: 150vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: #fa8f6f;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+/*  Aqui é a configuraçao das redes sociais */
+main.social-media {
+    display: flex;
+    align-content: center;
+}
+
+main .social-media a {
+    text-decoration: none;
+}
+
+main .social-media img {
+    width: 36px;
+    margin-left: 3rem;
+}
+
+main .social-media a:first-child img {
+    margin-left: 0;
+}
+/* Essa parte modifica o distanciamento das social-media com a palavra OU  */
+main .alternative {
+    margin-top: 1rem;
+}
+/* essa parte configura o nome OU */
+main .alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #fa8f6f;
+    position: relative;
+}
+/* essa parte é a configuraçao dos dois traço entre a palavra OU */
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: #fa8f6f;
+}
+/* essa parte modifica o distanciamento do traçoas direito */
+main .alternative span::after {
+    left: 50px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+/* essa parte modifica o tamanho da letra do formulario e o distanciamento entre eles */
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 0rem;
+}
+/* essa parte modifica dentro do formulario a car da letra e a cor de fundo  */
+main form input {
+    background: #161923;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgba(166, 166, 166);
+    font-size: 1rem;
+    border: 1px solid #040B18;
+    border-radius: 8px;
+}
+/* essa parte modifica o botao de cadastrar */
+main form button[type="submit"]{
+    cursor: pointer;
+    width: 50%;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 32px;
+    background: #fa8f6f;
+    color: rgb(170, 168, 168);
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+main form button[type="submit"] a {
+
+    color: aliceblue;
+}
+/* essa parte é a modificaçao da cor de dentro do botao */
+main form button[type="submit"]:hover{
+    background: #09b0d6;
+}
+/* modifica a imagens do lado direito */
+section.images {
+    width: 60vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 3rem;
+}
+/* Essa parte modifica o tanho da foto  */
+section.images img {
+    width: 100%;
+}
+/* essa parte é a modificaçao do circulo */
+section.images .circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #f2c9b9, #ff7951);
+    clip-path: circle(40% at right 80%);
+    z-index: -1;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.images img {
+        width: 110%;
+    }
+
+    section.images .circle {
+        clip-path: circle(35% at right 80%);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    section.images {
+        display: none;
+        visibility: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main .alternative span {
+        font-size: 0.8rem;
+    }
+
+    main form label span, main form input[type="submit"] {
+        font-size: 1rem;
+    }
+}
+form{
+    color: #fa8f6f;
+}
+/* Essa parte modifica o link de entrar */
+a{
+    color: #fa8f6f;
+    text-decoration: none;
+}

@@ -16,7 +16,7 @@ header
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 85%;
     padding: 20px 100px;
     display: flex;
     justify-content: space-between;
@@ -49,9 +49,11 @@ header ul li a
     left: 45px;
 }
 
+/* IMPLEMENTAR HOUVER NO MENU */
+
 .fotos-gerais img {
-    margin-bottom: -60px;
-    margin-top: 60px;
+    margin-bottom: -140px;
+    margin-top: 145px;
     padding-left: 3px;
-    width: 334px;
+    width: 331px;
 }
